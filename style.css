@@ -1,0 +1,25 @@
+
+@media (min-width: 576px) { 
+
+    .nav-tabs .nav-link {width: 25% !important;} 
+
+    
+}
+
+.nav-tabs {border-bottom:none;}
+.nav-tabs .nav-link.active {border-color: #fff0;  border-top-left-radius: 15px; border-top-right-radius: 15px;}
+.nav-tabs .nav-link {border-style: none; width: 100%; font-size: 1.14em; text-align: center; color: white;  border-top-left-radius: 15px; border-top-right-radius: 15px;}
+
+.iconezao {font-size: 4rem;}
+
+.nav .laranja {background-color: rgb(255, 127, 0);}
+.nav .laranja.active {background-color: rgb(255, 127, 0); color: white;}
+.tab-pane .laranja {background-color: rgb(255, 127, 0); color: white;}
+
+.nav .turquesa {background-color: #17a2b8;}
+.nav .turquesa.active {background-color: #17a2b8; color: white;}
+.tab-pane .turquesa {background-color: #17a2b8; color: white;}
+
+.nav .roxo {background-color: rgb(103, 58, 183);}
+.nav .roxo.active {background-color: rgb(103, 58, 183); color: white;}
+.tab-pane .roxo {background-color: rgb(103, 58, 183); color: white;}

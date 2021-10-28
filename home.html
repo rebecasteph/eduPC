@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TÍTULO DA PÁGINA NA ABA DO NAVEGADOR -->
+    <title>EduPC</title>
+
+    <!-- BOOTSTRAP ONLINE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- ÍCONES ONLINE -->
+    <script src="https://kit.fontawesome.com/c1d8bcdf04.js" crossorigin="anonymous"></script>
+
+    <!--CSS CRIADO -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- CORPO DA PÁGINA -->
+<body>
+    <header>
+        <!-- BARRA DE NAVEGACAO -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">EduPC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sobre
+                  </a>
+                  <div class="dropdown-menu"    aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"    href="#">Sobre a plataforma</a>
+                    <a class="dropdown-item"    href="#">Outra ação</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Algo mais aqui</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pensamento Computacional</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Computação Desplugada</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Notícias</a>
+                </li>
+                <li>
+                    <button class="btn btn-info mb-2 mb-lg-0 ml-lg-5" data-toggle="collapse" data-target="#collapseBusca" aria-expanded="false" aria-controls="collapseBusca">
+                        Buscar <i class="fas fa-search"></i>
+                    </button>
+                </li>
+              </ul>
+                <div>
+                    <button type="button" class="btn btn-light">Cadastrar-se</button>
+                    <button type="button" class="btn btn-info">Login</button>
+                </div>            
+            </div>
+        </nav>
+    </header>
+
+    <!-- BARRA DE BUSCA -->
+    <div class="collapse" id="collapseBusca">
+        <div class="input-group pt-3 bg-info">
+            <div class="col-md-7">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="O que você está buscando" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <p class="col-md-2 text-light border-right border-light">Pressione "Enter" ou click na lupa</p>
+            <div class="col-3 text-light">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+                    <label class="form-check-label" for="inlineRadio1">MATERIAIS</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+                    <label class="form-check-label" for="inlineRadio2">EVENTOS</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="opcao3">
+                    <label class="form-check-label" for="inlineRadio2">NOTÍCIAS</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row jumbotron pb-4 mb-0" style="background-color: #e3f2fd;">
+        <div class="col-md-6">
+            <h1 class="display-4 d-none d-md-block">Bem-vindo ao EduPC</h1>
+            <h3 class="mb-3">Bem-vindo ao EduPC</h3>
+            <p class="lead">Uma <b>plataforma educacional</b> com notícias, eventos e materiais de aula relacionados ao <b>pensamento computacional</b> e <b>computação desplugada</b>.</p>
+            <hr class="my-4">
+            <p class="lead">Criado por <b>professores</b> e para <b>professores</b></p>
+            <a class="btn btn-info mb-3" href="#" role="button">Faça parte</a>
+        </div>
+        <!-- CAROUSEL DE BANNERS -->
+        <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" style="border-radius: 10px;">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://www.makerzine.com.br/wp-content/uploads/2021/08/Pensamento-Computacional.png" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scratchbrasil.org.br/wp-content/uploads/2020/04/Estudio-Semana-do-Scratch.png" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://lh3.googleusercontent.com/proxy/IRHh9I8E2reSq2ohQoxWBME7LbNLXerrWlFiLdJbdmEkZvdWDs1PlzHYB_WK_-Qxu3LwuipwvOCapMeghmXnxT_mr1pOEtrt_jXJh8gAcKY-Q3DBrs-nhO1wJg" alt="Terceiro Slide">
+                    </div>
+                </div>
+                <!-- CONTROLADORES DO CAROUSEL -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>    
+    </div>
+
+    <div class="container-fluid p-0">
+        <!-- NAVS: COMPONENTE DE DAVEGAÇÃO -->
+        <div>
+            <!-- COMPONENTES -->
+            <nav class=""  style="background-color: #e3f2fd;">
+                <div class="justify-content-center nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="laranja nav-item nav-link active" id="nav-home-tab" data-toggle="tab"     href="#nav-home" role="tab"     aria-controls="nav-home"    aria-selected="false">NOTÍCIAS</a>
+                <a class="turquesa nav-item nav-link"       id="nav-profile-tab" data-toggle="tab"  href="#nav-profile" role="tab"  aria-controls="nav-profile" aria-selected="false">EVENTOS</a>
+                <a class="roxo nav-link nav-link"           id="nav-contact-tab" data-toggle="tab"  href="#nav-contact" role="tab"  aria-controls="nav-contact" aria-selected="true">MATERIAIS E ATIVIDADES</a>
+                </div>
+            </nav>
+            <!-- ÁREAS -->
+            <div class="tab-content" id="nav-tabContent">
+                <!-- NOTÍCIAS -->
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="laranja">
+                        <div class="d-flex justify-content-center pt-3 pb-2 align-items-center">
+                            <div class="col-3 d-none d-md-block" style="text-align: center;">
+                                <i class="iconezao fas fa-hashtag"></i>
+                            </div>
+                            <div class="col col-md-6">
+                                <p>
+                                    Publique e acompanhe notícias e últimos eventos acontecidos na comunidade.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARDS DE NOTÍCIAS -->
+                    <div class="container mt-4">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0">Notícias em destaque</h4>
+                            <button type="button" class="btn laranja btn-sm">Ver todos</button>
+                        </div>
+                        <h4 class="mt-0 pt-0" style="color:rgb(255, 127, 0);">_____</h4>
+                        <div class="mt-4 card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="d-flex mt-sm-5 justify-content-center">
+                            <button type="button" class="btn laranja">Ver todas as notícias e eventos passados</button>
+                        </div>
+                    </div>                
+                </div>
+                <!-- EVENTOS -->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="turquesa">
+                        <div class="d-flex justify-content-center pt-3 pb-2 align-items-center">
+                            <div class="col-3 d-none d-md-block" style="text-align: center;">
+                                <i class="iconezao fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    Publique e acompanhe eventos a serem realizados na comunidade.                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARDS DE EVENTOS -->
+                    <div class="container mt-4">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0">Eventos em destaque</h4>
+                            <button type="button" class="btn turquesa btn-sm">Ver todos</button>
+                        </div>
+                        <h4 class="mt-0 pt-0" style="color:#17a2b8;">_____</h4>
+                        <div class="mt-4 card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="d-flex mt-sm-5 justify-content-center">
+                            <button type="button" class="btn turquesa">Ver eventos disponíveis</button>
+                        </div>
+                    </div>                
+                </div>
+                <!-- MATERIAIS -->
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="roxo">
+                        <div class="d-flex justify-content-center pt-3 pb-2 align-items-center">
+                            <div class="col-3 d-none d-md-block" style="text-align: center;">
+                                <i class="iconezao fas fa-icons"></i>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    Compartilhe e acompanhe novas aulas e materiais epara inovar em suas aulas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARDS DE MATERIAIS -->
+                    <div class="container mt-4">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0">Materiais e atividades</h4>
+                            <button type="button" class="btn roxo btn-sm">Ver todos</button>
+                        </div>
+                        <h4 class="mt-0 pt-0" style="color:rgb(103, 58, 183);">_____</h4>
+                        <div class="mt-4 card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://www.aprendizagemcriativa.org/sites/default/files/styles/slider/public/2020-07/IMG_3501.jpg?itok=xZRtuYtX" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <small class="text-muted d-flex">Atualizados em 14/06/2021 às 17h31min</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i> Alessandra Matos</small>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                                </div>
+                                <div class=" d-flex card-footer justify-content-between">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <div>
+                                        <small class="text-danger mr-2">
+                                            <i class="fas fa-heart"></i> 13
+                                        </small>
+                                        <small class="text-info mr-2">
+                                            <i class="fas fa-bookmark"></i> 6
+                                        </small>
+                                        <small class="text-dark">
+                                            <i class="fas fa-comment-alt"></i> 2
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="d-flex mt-sm-5 justify-content-center">
+                            <button type="button" class="btn roxo">Ver biblioteca de materiais e atividades</button>
+                        </div>
+                    </div>                
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+<!-- RODAPÉ DA PÁGINA -->
+<footer class="navbar-dark bg-dark text-light mt-3 mt-sm-5">
+    <div class="container">
+        <div class="row justify-content-center pt-4 pb-4 align-items-center">
+            <div class="col-3" style=" text-align: center;">
+                <i class="iconezao fas fa-cubes"></i>
+            </div>
+            <div class="col-6">
+                <div class="mt-2 mb-3 d-flex flex-column">
+                    <small class="text-muted">Universidade do Estado do Amazonas (UEA)</small>
+                    <small class="text-muted">Escola Superior de Tecnologia (EST)</small>
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex flex-column flex-fill">
+                        <small>Rebeca Assunção</small>
+                        <small class="text-muted">Front-end Developer</small>
+                    </div>
+                    <div  class="d-flex flex-column flex-fill">
+                        <small>Juliana Mendes</small>
+                        <small class="text-muted">Instructional Designer</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
